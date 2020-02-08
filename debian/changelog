@@ -1,0 +1,5 @@
+openmediavault-syncwatch (5.0) stable; urgency=low
+
+  * Initial release
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 26 Jan 2020 14:18:23 -0600

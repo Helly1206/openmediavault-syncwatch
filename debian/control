@@ -1,0 +1,14 @@
+Source: openmediavault-syncwatch
+Section: net
+Priority: optional
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+XB-Plugin-Section: sharing
+
+Package: openmediavault-syncwatch
+Architecture: all
+Depends: openmediavault (>= 5.1),
+         ${misc:Depends}
+Description: SyncWatch plugin for OpenMediaVault.
+ Allow controlling SyncWatch directly from OpenMediaVault.

@@ -1,0 +1,62 @@
+#!/bin/sh
+
+set -e
+
+. /etc/default/openmediavault
+. /usr/share/openmediavault/scripts/helper-functions
+
+SERVICE_XPATH_NAME="syncwatch"
+SERVICE_XPATH="/config/services/${SERVICE_XPATH_NAME}"
+
+remove_action() {
+    dpkg-trigger update-fixperms
+}
+
+case "$1" in
+    purge)
+        remove_action
+
+        if omv_config_exists "${SERVICE_XPATH}"; then
+            omv_config_delete "${SERVICE_XPATH}"
+        fi
+
+        #if [ -f /etc/network/if-pre-up.d/openvpn ]; then
+        #    rm -r /etc/network/if-pre-up.d/openvpn
+        #fi
+
+        #if [ -f /etc/openvpn/ipp.txt ]; then
+        #    rm /etc/openvpn/ipp.txt
+        #fi
+
+        #if [ -d /etc/openvpn/keys ]; then
+        #    rm -r /etc/openvpn/keys
+        #fi
+
+        #if [ -f /etc/openvpn/server.conf ]; then
+        #    rm -r /etc/openvpn/server.conf
+        #fi
+
+        #if [ -f /etc/sysctl.d/99-openvpn.conf ]; then
+        #    rm -r /etc/sysctl.d/99-openvpn.conf
+        #fi
+
+        # Remove the easyrsa directory
+        #rm -rf /opt/Easy-RSA-*
+    ;;
+
+    remove)
+        remove_action
+    ;;
+
+    upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+    ;;
+
+    *)
+        echo "postrm called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+
+
+exit 0

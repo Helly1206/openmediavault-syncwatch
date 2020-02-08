@@ -1,0 +1,88 @@
+[{
+    "type": "rpc",
+    "id": "rpc.syncwatch.setsettings",
+    "params": {
+        "type": "object",
+        "properties": {
+            "enable": {
+                "type": "boolean",
+                "required": true
+            }
+        }
+    }
+}, {
+    "type": "rpc",
+    "id": "rpc.syncwatch.set",
+    "params": {
+        "type": "object",
+        "properties": {
+            "uuid": {
+                "type": "string",
+                "format": "uuidv4",
+                "required": true
+            },
+			"enable": {
+				"type": "boolean",
+				"required": true
+			},
+    	    "safemount": {
+			    "type": "boolean",
+			    "required": true
+		    },
+            "sourceref": {
+				"type": "string",
+				"format": "uuidv4",
+                "required": true
+			},
+            "destref": {
+				"type": "string",
+				"format": "uuidv4",
+                "required": true
+			},
+            "delay": {
+                "type": "string",
+                "required": true
+            },
+			"reversesync": {
+				"type": "boolean",
+				"required": true
+			},
+			"resettimer": {
+				"type": "boolean",
+				"required": true
+			},
+			"initsync": {
+				"type": "boolean",
+				"required": true
+			},
+			"retry": {
+				"type": "boolean",
+				"required": true
+			},
+			"delete": {
+				"type": "boolean",
+				"required": true
+			},
+            "exclude": {
+                "type": "string",
+                "required": true
+            },
+            "include": {
+                "type": "string",
+                "required": true
+            },
+			"compress": {
+				"type": "boolean",
+				"required": true
+			},
+			"update": {
+				"type": "boolean",
+				"required": true
+			},
+            "options": {
+                "type": "string",
+                "required": true
+            }
+        }
+    }
+}]

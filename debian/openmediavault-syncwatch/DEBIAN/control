@@ -1,0 +1,11 @@
+Package: openmediavault-syncwatch
+Version: 5.0
+Architecture: all
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Installed-Size: 252
+Depends: openmediavault (>= 5.1)
+Section: net
+Priority: optional
+Description: SyncWatch plugin for OpenMediaVault.
+ Allow controlling SyncWatch directly from OpenMediaVault.
+Plugin-Section: sharing
