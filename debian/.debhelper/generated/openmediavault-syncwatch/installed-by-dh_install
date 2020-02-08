@@ -1,9 +1,0 @@
-./srv/salt
-./opt/syncwatch
-./etc/systemd
-./usr/share/openmediavault/confdb
-./usr/share/openmediavault/datamodels
-./usr/share/openmediavault/engined
-./usr/share/openmediavault/locale
-./var/www/openmediavault/images
-./var/www/openmediavault/js

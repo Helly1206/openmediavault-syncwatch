@@ -1,8 +1,0 @@
-[B]0.8.3[/B]
-- Fix unable to exit service when sync not found
-
-[B]0.8.2[/B]
-- Added retry function if source or destination folder doesn't exist
-
-[B]0.8.1[/B]
-- Initial release
