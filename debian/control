@@ -8,7 +8,7 @@ XB-Plugin-Section: sharing
 
 Package: openmediavault-syncwatch
 Architecture: all
-Depends: openmediavault (>= 5.1),
+Depends: openmediavault (>= 5.1), syncwatch (>= 0.84), python3
          ${misc:Depends}
 Description: SyncWatch plugin for OpenMediaVault.
  Allow controlling SyncWatch directly from OpenMediaVault.

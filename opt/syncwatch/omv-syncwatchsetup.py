@@ -102,7 +102,7 @@ def prettify(elem):
     """
     rough_string = tostring(elem, ENCODING)
     reparsed = parseString(rough_string)
-    return reparsed.toprettyxml(indent="  ").replace('<?xml version="1.0" ?>','<?xml version="1.0" encoding="%s"?>' % ENCODING)
+    return reparsed.toprettyxml(indent="\t").replace('<?xml version="1.0" ?>','<?xml version="1.0" encoding="%s"?>' % ENCODING)
 
 def bstr(boolele):
     if boolele:

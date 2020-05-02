@@ -1,5 +1,11 @@
+openmediavault-syncwatch (5.01) stable; urgency=low
+
+  * De-integrated syncwatch from openmediavault-syncwatch. Syncwatch is depend and will be installed if non existing.
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sat, 02 May 2020 05:53:52 +0100
+
 openmediavault-syncwatch (5.0) stable; urgency=low
 
   * Initial release
 
- -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 26 Jan 2020 14:18:23 -0600
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Sun, 26 Jan 2020 14:18:23 +0100
